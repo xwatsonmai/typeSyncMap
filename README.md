@@ -16,6 +16,13 @@ import (
 
 func main() {
 	data := typeSyncMap.NewTypeSyncMap[string, int]()
+	data.LoadOrStore("1", 1)
+	data.Store("2", 2)
+	data.Store("3", 3)
+	data.Range(func(key string, value int) bool {
+		println("key:", key, "value:", value)
+		return true
+	})
 }
 
 ```
