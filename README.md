@@ -12,11 +12,10 @@ package main
 
 import (
 	"github.com/xwatsonmai/typeSyncMap"
-	"sync"
-	_ "github.com/xwatsonmai/typeSyncMap"
 )
 
 func main() {
 	data := typeSyncMap.NewTypeSyncMap[string, int]()
 }
+
 ```
